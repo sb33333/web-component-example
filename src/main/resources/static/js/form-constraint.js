@@ -28,3 +28,5 @@ export function appendCustomFormValidation (formElement) {
     formElement.addEventListener("invalid", invalidEventHandler, true);
     formElement.addEventListener("input", inputEventHandler);
 }
+
+const hello = "world";
