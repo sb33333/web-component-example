@@ -6,7 +6,7 @@ export function getByteLength(textValue) {
     let charBytes = 0;
   
     for (let i = 0; i < textValue.length; i += 1) {
-      character = str.charAt(i);
+      character = textValue.charAt(i);
   
       if (escape(character).length > 4) charBytes += 2;
       else charBytes += 1;

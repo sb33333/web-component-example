@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/web-component/style.css">
+</head>
+<body>
+    
+    <form id="form" action="/echo" method="post">
+        
+        <h3>일반 TEXTAREA 요소</h3>
+        <textarea name="light-dom">link 요소로 불러온 stylesheet 적용</textarea>
+        <hr/>
+        <h3>사용자 정의 요소. SHADOW DOM에 정의한 STYLE 적용</h3>
+        <length-display-textarea name="web-component1" maxlength="30">Isolated from global style.</length-display-textarea>
+        <h3>사용자 정의 요소. STYLESHEET 적용</h3>
+        <byte-length-display-textarea name="web-component2" maxlength="80" inheritstyle="true">SHADOW DOM 스타일 > STYLESHEET 스타일</byte-length-display-textarea>
+
+
+    </form>
+    <button id="submit">submit</button>
+    <script type="module" src="/web-component/index.js">
+
+    </script>
+    <script>
+        
+    </script>
+</body>
+</html>

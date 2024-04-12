@@ -6,9 +6,11 @@ export function getGlobalStyleSheets() {
         .map(styleSheet=>{
             const sheet = new CSSStyleSheet();
             const css =Array.from(styleSheet.cssRules).map(rule=>rule.cssText).join(" ");
-            sheet.replaceSync(css);returnSheet;}); 
+            sheet.replaceSync(css);
+            return sheet;
+        }); 
         return globalSheets;
     }
 export function addGlobalStylesToShadowRoot(shadowRoot){
-    shadowRoot.adoptedSTyleSheets.push(...getGlobalStyleSheets());
+    shadowRoot.adoptedStyleSheets.push(...getGlobalStyleSheets());
 }
