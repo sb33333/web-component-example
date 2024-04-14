@@ -50,6 +50,7 @@ class LengthDisplayTextarea extends HTMLElement {
         this.checkValidity();
     }
 connectedCallback(){
+    // interitstyle 속성을 사용해서 global style sheet를 적용할지 결정합니다.
     if(Boolean(this.getAttribute("inheritstyle"))===true){
         addGlobalStylesToShadowRoot(this.shadowRoot);
     }
@@ -61,6 +62,7 @@ connectedCallback(){
 disconnectedCallback(){
     this.removeEventListener("input",this._textareaInputEventHandler);
 }
+// maxlength 속성이 변경될 때마다 텍스트 길이를 다시 검사합니다.
 static observedAttributes=['maxlength'];
 attributeChangedCallback(name,oldValue,newValue){
     if(oldValue===newValue)return;
