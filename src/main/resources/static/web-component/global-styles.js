@@ -1,3 +1,7 @@
+/**
+ * link 태그로 볼러온 css style시트를 shadow DOM에 적용합니다.
+ */
+
 let globalSheets = null;
 
 export function getGlobalStyleSheets() {
