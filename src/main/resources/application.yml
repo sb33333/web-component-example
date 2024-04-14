@@ -10,5 +10,7 @@ spring:
     suffix: .html
     cache: false
   devtools:
+    restart:
+      enabled: true
     livereload:
       enabled: true

@@ -15,12 +15,20 @@
         <hr/>
         <h3>사용자 정의 요소. SHADOW DOM에 정의한 STYLE 적용</h3>
         <length-display-textarea name="web-component1" maxlength="30">Isolated from global style.</length-display-textarea>
-        <h3>사용자 정의 요소. STYLESHEET 적용</h3>
+        <h3>사용자 정의 요소. SHADOW DOM에 정의한 STYLE + STYLESHEET 적용</h3>
         <byte-length-display-textarea name="web-component2" maxlength="80" inheritstyle="true">SHADOW DOM 스타일 > STYLESHEET 스타일</byte-length-display-textarea>
 
 
     </form>
     <button id="submit">submit</button>
+    <div>
+        <h3>참고</h3>
+        <p>shadow DOM 내부의 input 요소는 일반적으로 form에서 인식되지 않지만 formAssociated 속성을 사용해 form에서 인식할 수 있습니다.</p>
+        <p>
+            shadowRoot.adoptedStyleSheets를 사용해 외부의 css style sheet를 적용할 수 있습니다. 
+            <br/>style 적용 우선운위는 shadow DOM에 선언된 style 요소가 먼저 적용되고 불러온 외부 style sheet가 적용됩니다.
+        </p>
+    </div>
     <script type="module" src="/web-component/index.js">
 
     </script>
