@@ -18,6 +18,9 @@ function appendTemplate(parentElement) {
     parentElement.appendChild(divElement);
 }
 
+/**
+ * 텍스트 길이를 표시하는 custom textarea element
+ */
 class LengthDisplayTextarea extends HTMLElement {
     static formAssociated=true;
     constructor(){super();
@@ -83,8 +86,6 @@ drawView(){
     var value=this.value;
     //requestAnimationFrame(()=>{
     var n = this.textLengthView(lengthSpan, value);
-    console.log(n.textConetnt);
-    console.log("replaceWith");
     lengthSpan.replaceWith(n);
     //});
 }
