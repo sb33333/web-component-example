@@ -32,10 +32,13 @@
 
 ## 참고자료
 MDN Web Components
-https://developer.mozilla.org/ko/docs/Web/API/Web_components
+<br/>https://developer.mozilla.org/ko/docs/Web/API/Web_components
 
 [영상] 깃헙 개발자들이 React 안쓰는 이유 : Web Component (코딩애플)
-https://youtu.be/RtvSgptpfnY?si=CJv_ogh-DaPt9QQ1
+<br/>https://youtu.be/RtvSgptpfnY?si=CJv_ogh-DaPt9QQ1
 
 [blog] How we use Web Components at GitHub
-https://github.blog/2021-05-04-how-we-use-web-components-at-github/
+<br/>https://github.blog/2021-05-04-how-we-use-web-components-at-github/
+
+caniuse
+</br>https://caniuse.com/?search=web%20components
